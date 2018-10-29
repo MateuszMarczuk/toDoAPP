@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="750.0" style="-fx-background-color: #3c3c3c;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="101.0" prefHeight="375.0" prefWidth="756.0" style="-fx-background-color: #dedede;">
+         <children>
+            <TextField fx:id="loginUserName" layoutX="263.0" layoutY="107.0" prefHeight="26.0" prefWidth="231.0" promptText="User" />
+            <TextField fx:id="loginPassword" layoutX="263.0" layoutY="164.0" prefHeight="26.0" prefWidth="231.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="310.0" layoutY="243.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="137.0" style="-fx-background-color: #ffcc2a;" text="Login" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="285.0" layoutY="31.0" prefHeight="51.0" prefWidth="182.0" text="ToDO APP" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginSignUpButton" layoutX="655.0" layoutY="31.0" mnemonicParsing="false" style="-fx-background-color: #ffcc2a;" text="Sign Up" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

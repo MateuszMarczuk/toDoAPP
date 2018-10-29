@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="475.0" prefWidth="750.0" style="-fx-background-color: #dedede;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddItemController">
+   <children>
+      <AnchorPane prefHeight="97.0" prefWidth="750.0" style="-fx-background-color: #3c3c3c;">
+         <children>
+            <Label layoutX="289.0" layoutY="29.0" prefHeight="51.0" prefWidth="182.0" text="ToDO APP" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="266.0" layoutY="222.0" text="Not task for today, yet !">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="addButton" fitHeight="59.0" fitWidth="68.0" layoutX="346.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_add_circle_black_24dp.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
