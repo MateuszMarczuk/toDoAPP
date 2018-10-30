@@ -7,13 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.Optional;
-import java.util.function.BinaryOperator;
 
-import static javafx.application.Application.launch;
 public class Main extends Application {
 
     @Override
