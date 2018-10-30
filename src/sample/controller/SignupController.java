@@ -2,12 +2,17 @@ package sample.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 import sample.database.DatabaseHandler;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -47,6 +52,10 @@ public class SignupController {
     @FXML
     private Button SignUpButtonSignUp;
 
+
+    @FXML
+    private Button SignUpButtonBack;
+
     @FXML
     void eeeeee(ActionEvent event) {
 
@@ -61,6 +70,22 @@ public class SignupController {
 
             databaseHandler.signUpUser(SignUpFirstName.getText(), SignUpLastName.getText(),
                 SignUpUsername.getText(),SignUpPassword.getText(),  "Female", SignUpLocation.getText());
+        });
+
+        SignUpButtonBack.setOnAction(event -> {
+            SignUpButtonBack.getScene().getWindow().hide();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/sample/view/login.fxml"));
+            try {
+                loader.load();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            System.out.println("ASdasdasdad");
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.showAndWait();
         });
 
     }
