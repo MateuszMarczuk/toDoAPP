@@ -10,8 +10,8 @@ public class Const {
 
     //columnt names
     public static final String USERS_USER_ID = "user_id";
-    public static final String USERS_FIRSTNAME = "firstname";
-    public static final String USERS_LASTNAME = "lastname";
+    public static final String USERS_FIRSTNAME = "first_name";
+    public static final String USERS_LASTNAME = "last_name";
     public static final String USERS_USERNAME = "username";
     public static final String USERS_PASSWORD = "password";
     public static final String USERS_GENDER= "gender";
