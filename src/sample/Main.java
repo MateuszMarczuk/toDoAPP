@@ -1,11 +1,19 @@
 package sample;
 
+import com.sun.prism.shader.Solid_TextureRGB_AlphaTest_Loader;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.Optional;
+import java.util.function.BinaryOperator;
+
+import static javafx.application.Application.launch;
 public class Main extends Application {
 
     @Override
@@ -19,5 +27,5 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
-    }
-}
+
+}}
